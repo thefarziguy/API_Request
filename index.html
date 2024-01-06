@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Request</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #434040e4;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+
+      a {
+        color: #ec7979;
+        text-decoration: none;
+        border: 1px solid #ec7979;
+        font-weight: 100;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .main {
+        width: 800px;
+        height: 800px;
+        display: flex;
+        margin: 110px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        transition: all 3s;
+      }
+      .main:hover {
+        box-shadow: 10px 10px 20px #353737;
+        color: greenyellow;
+      }
+
+      .heading {
+        padding: 5px;
+      }
+      .dataContainer {
+        border: 0px dotted white;
+        height: 600px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transition: all 2s;
+      }
+      .dataContainer:hover {
+        box-shadow: 10px 10px 30px #1e2121;
+        color: greenyellow;
+      }
+      #IMG {
+        border-radius: 50%;
+      }
+      #imgContainer {
+        transition: all 2s;
+      }
+      #imgContainer:hover {
+        border-radius: 50%;
+        box-shadow: 10px 10px 30px #1e2121;
+      }
+      #detailContainer {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <h4 id="heading">Prashant Singh || GitHub</h4>
+      </div>
+      <div class="dataContainer">
+        <div id="imgContainer"></div>
+        <div id="detailContainer">
+          <span id="name"></span>
+          <span id="followers"></span>
+          <span id="following"></span>
+        </div>
+        <div id="profileLink">
+          <a id="URL" href="https://github.com/thefarziguy" target="_blank"
+            >Visit Profile</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
